@@ -1,0 +1,59 @@
+:root {
+    --primary-color: #e72929;
+}
+
+a {
+    text-decoration: none;
+    color: #af1313;
+    font-weight: 500;
+}
+
+a:hover {
+    background-color: lightcoral;
+    color: #fff;
+    width: 100;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li a {
+    padding: 1em;
+    display: inline-block;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo {
+    margin-right: 0.5rem;
+}
+
+.restaurant-name {
+    font-weight: bolder;
+    color: brown;
+    font-family: 'Tilt Prism', cursive;
+}
+
+.restaurant-name:hover {
+    color: #fff;
+}

@@ -1,0 +1,33 @@
+/* Assuming you have a CSS file linked to your component */
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: darkcyan;
+    border: none;
+    height: 25vh;
+    margin: 20px auto;
+}
+
+div a {
+    padding: .2rem;
+    margin-top: 1rem;
+    background: #e72929;
+    color: white;
+    display: block;
+    width: 20%;
+    border-radius: 2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    opacity: .7;
+    font-weight: 400;
+    text-decoration: none;
+    justify-content: center;
+}

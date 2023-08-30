@@ -1,0 +1,40 @@
+<!-- Display a message when cart is empty -->
+<div>
+    <app-not-found [visible]="!cart || cart.items.length <= 0" notFoundMessage="Items not Found!" resetLinkText="Go to Homepage"></app-not-found>
+</div>
+
+<!-- Display cart items when there are items in the cart -->
+<div *ngIf="cart && cart.items.length > 0" class="container">
+    <ul>
+        <li *ngFor="let cartItem of cart.items">
+            <div>
+                <img [src]="cartItem.food.imageUrl" [alt]="cartItem.food.name">
+            </div>
+            <div>
+                <a [routerLink]="'/food/' + cartItem.food.id">
+            {{ cartItem.food.name }}
+          </a>
+            </div>
+            <div>
+                <select #quantitySelect (change)="changeQuantity(cartItem, quantitySelect.value)" name="" id="">
+            <option *ngFor="let i of [1, 2, 3, 4, 5]">{{ i }}</option>
+          </select>
+            </div>
+            <div>
+                {{ cartItem.price | currency: 'INR' }}
+            </div>
+            <div>
+                <button class="remove-button btn btn-danger" (click)="removeFromCart(cartItem)">Remove Item</button>
+            </div>
+        </li>
+    </ul>
+    <div class="checkout">
+        <div class="food-count">
+            {{ cart.items.length }}
+        </div>
+        <div class="total-price">
+            {{ cart.totalPrice | currency: 'INR' }}
+        </div>
+        <a [routerLink]="'/checkout'">Proceed to Checkout</a>
+    </div>
+</div>

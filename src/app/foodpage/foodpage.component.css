@@ -1,0 +1,97 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-block: 3rem;
+    flex-direction: row-reverse;
+}
+
+.full {
+    background-color: whitesmoke;
+}
+
+.container>* {
+    min-width: 25rem;
+    max-width: 30rem;
+}
+
+img {
+    border-radius: 3rem;
+    flex: 1 0;
+    object-fit: fill;
+    height: 30rem;
+    margin: 1rem;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.details {
+    border-radius: 3rem;
+    width: 100%;
+    padding: 2rem 2rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset, rgba(229, 110, 110, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    ;
+}
+
+details:hover {
+    box-shadow: rgba(229, 110, 110, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .name {
+    font-size: 2rem;
+    font-family: 'Tilt Prism', cursive;
+    color: red;
+    font-weight: bolder;
+}
+
+.details .favorite {
+    font-size: 1.8rem;
+}
+
+.details .origins {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+
+.details .origins>span {
+    padding: .5rem;
+    font-size: 1.2rem;
+    margin: .5rem .5rem .5rem 0;
+    border-radius: 2rem;
+    background-color: blanchedalmond;
+    font-weight: lighter;
+    color: deepskyblue;
+}
+
+.details .cook-time {
+    margin: 1rem;
+}
+
+.details .price {
+    font-size: 1.8rem;
+    font-weight: bolder;
+    margin: 2rem 2rem 2rem 0;
+    color: green;
+}
+
+button {
+    width: 100%;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    color: white;
+    border-radius: 4rem;
+    opacity: 1;
+}
+
+button:hover {
+    opacity: .9;
+    color: whitesmoke;
+}

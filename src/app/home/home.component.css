@@ -1,0 +1,91 @@
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 2rem;
+}
+
+ul li a {
+    height: 22.5rem;
+    width: 20rem;
+    border: 2px solid whitesmoke;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: #e72929;
+}
+
+li a {
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    text-decoration: none;
+}
+
+li a:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+* {
+    background-color: whitesmoke;
+}
+
+.star-dummy {
+    font-weight: 700;
+    margin-bottom: .2rem;
+}
+
+.name {
+    margin-top: .4rem;
+    font-weight: 600;
+    font-family: 'Tilt Prism', cursive;
+}
+
+.content {
+    padding: 0 .6rem;
+    position: relative;
+}
+
+.favorite {
+    position: absolute;
+    top: .4rem;
+    right: 1rem;
+    font-size: 1.1rem;
+}
+
+.product-item-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .2rem;
+}
+
+.origins {
+    flex: 9;
+}
+
+.origins span {
+    border-radius: 1rem;
+    background-color: wheat;
+    color: blueviolet;
+    font-size: .8rem;
+    margin-right: .3rem;
+    display: inline-block;
+}
+
+.cook-time {
+    font-size: .8rem;
+    flex: 3;
+    text-align: center;
+}
+
+.price {
+    color: darkslategrey;
+    margin-top: .1rem;
+    font-style: oblique;
+}

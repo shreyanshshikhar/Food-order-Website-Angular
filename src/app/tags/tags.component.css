@@ -1,0 +1,23 @@
+div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 5px;
+}
+
+div a {
+    background-color: cyan;
+    padding: .3rem 1rem;
+    margin: .2rem .15rem;
+    border-radius: 10rem;
+    text-decoration: none;
+    font-style: oblique;
+    font-family: monospace;
+    font-weight: 700;
+    color: darkslateblue;
+}
+
+div a:hover {
+    font-style: normal;
+    background-color: lightcyan;
+}
